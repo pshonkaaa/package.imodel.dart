@@ -6,11 +6,11 @@ import 'interfaces/IModel.dart';
 import 'interfaces/IModelListeners.dart';
 import 'interfaces/ModelController.dart';
 
-abstract class AbstractModel<T extends IEntity<ENUM>, ENUM> extends ModelController implements IModel<ENUM> {
+abstract class AbstractModel<T extends IEntity> extends ModelController implements IModel {
   final T entity;
   
   @override
-  IModelListeners<ENUM> get listeners;
+  IModelListeners get listeners;
   
   AbstractModel.fromEntity(this.entity);
 

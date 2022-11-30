@@ -1,5 +1,5 @@
 import 'IModelListeners.dart';
 
-abstract class IModel<ENUM> {
-  IModelListeners<ENUM> get listeners;
+abstract class IModel {
+  IModelListeners get listeners;
 }

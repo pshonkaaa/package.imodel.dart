@@ -4,13 +4,13 @@ import 'AbstractModel.dart';
 import 'DefaultModelListeners.dart';
 import 'interfaces/EModelState.dart';
 
-abstract class AbstractDefaultModel<T extends IEntity<ENUM>, ENUM> extends AbstractModel<T, ENUM> {
+abstract class AbstractDefaultModel<T extends IEntity> extends AbstractModel<T> {
   @override
-  late DefaultModelListeners<ENUM> listeners;
+  late DefaultModelListeners listeners;
   
   AbstractDefaultModel.fromEntity(
     T entity, {
-      DefaultModelListeners<ENUM>? listeners,
+      DefaultModelListeners? listeners,
   }) : super.fromEntity(entity) {
     this.listeners = listeners ?? DefaultModelListeners();
   }
