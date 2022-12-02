@@ -1,6 +1,6 @@
 name: imodel
 description:
-version: 0.0.3
+version: 0.1.0
 publish_to: none
 
 environment:
@@ -14,7 +14,6 @@ dependencies:
   ientity:
     git:
       url: https://github.com/TrueCollaboration/ientity.dart.git
-      ref: new
 
 dev_dependencies:
   lints: ^2.0.0
