@@ -1,10 +1,12 @@
-library truecollaboration.true_core.imodel;
+library library;
 
-export 'src/external/interfaces/EModelState.dart';
-export 'src/external/interfaces/IModel.dart';
-export 'src/external/interfaces/IModelListeners.dart';
-export 'src/external/interfaces/ModelController.dart';
+export 'src/external/bases/base_default_model.dart';
+export 'src/external/bases/base_model.dart';
+export 'src/external/bases/model_listeners.dart';
 
-export 'src/external/AbstractDefaultModel.dart';
-export 'src/external/AbstractModel.dart';
-export 'src/external/DefaultModelListeners.dart';
+export 'src/external/interfaces/model_controller.dart';
+export 'src/external/interfaces/model.dart';
+
+export 'src/external/default_model_listeners.dart';
+
+export 'src/external/enums.dart';

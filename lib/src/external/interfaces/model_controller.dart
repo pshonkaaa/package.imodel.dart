@@ -1,6 +1,5 @@
+import 'package:imodel/library.dart';
 import 'package:meta/meta.dart';
-
-import 'EModelState.dart';
 
 abstract class ModelController {
   EModelState _state = EModelState.idle;
@@ -9,9 +8,9 @@ abstract class ModelController {
   void initState() {
     // assert(() {
       if(_state == EModelState.initialized)
-        throw(new Exception("Model has been already initialized"));
+        throw(Exception("Model has been already initialized"));
       else if(_state == EModelState.disposed)
-        throw(new Exception("Model has been already disposed"));
+        throw(Exception("Model has been already disposed"));
       _state = EModelState.initialized;
       // return true;
     // }());
@@ -21,7 +20,7 @@ abstract class ModelController {
   void dispose() {
     // assert(() {
       if(_state == EModelState.disposed)
-        throw(new Exception("Model has been already disposed"));
+        throw(Exception("Model has been already disposed"));
       _state = EModelState.disposed;
       // return true;
     // }());

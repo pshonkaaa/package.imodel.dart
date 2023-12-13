@@ -1,14 +1,11 @@
 import 'package:ientity/library.dart';
+import 'package:imodel/library.dart';
 
-import 'AbstractModel.dart';
-import 'DefaultModelListeners.dart';
-import 'interfaces/EModelState.dart';
-
-abstract class AbstractDefaultModel<T extends IEntity> extends AbstractModel<T> {
+abstract class BaseDefaultModel<T extends IEntity> extends AbstractModel<T> {
   @override
   late DefaultModelListeners listeners;
   
-  AbstractDefaultModel.fromEntity(
+  BaseDefaultModel.fromEntity(
     T entity, {
       DefaultModelListeners? listeners,
   }) : super.fromEntity(entity) {

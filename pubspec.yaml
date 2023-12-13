@@ -1,6 +1,6 @@
 name: imodel
 description:
-version: 0.1.1
+version: 0.1.2
 publish_to: none
 
 environment:
@@ -10,10 +10,10 @@ dependencies:
   meta: any
   true_core:
     git:
-      url: https://github.com/TrueCollaboration/true_core.dart.git
+      url: https://github.com/TrueCollaboration/package.true_core.dart.git
   ientity:
     git:
-      url: https://github.com/TrueCollaboration/ientity.dart.git
+      url: https://github.com/TrueCollaboration/package.ientity.dart.git
 
 dev_dependencies:
   lints: ^2.0.0
