@@ -1,6 +1,6 @@
 import 'package:ientity/library.dart';
 import 'package:imodel/library.dart';
-import 'package:true_core/library.dart';
+import 'package:foundation/library.dart';
 
 class DefaultModelListeners extends ModelListeners {
   late final BaseDefaultModel model;
