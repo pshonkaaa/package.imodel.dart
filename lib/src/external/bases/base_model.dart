@@ -1,6 +1,6 @@
 import 'package:ientity/library.dart';
 import 'package:imodel/library.dart';
-import 'package:foundation/library.dart';
+import 'package:pshondation/library.dart';
 
 abstract class AbstractModel<T extends IEntity> extends ModelController implements IModel {
   final T entity;
